@@ -1,0 +1,80 @@
+@import "./reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html, body, #root, .app {
+    height: 100%;
+    width: 100%;
+    touch-action: pan-x pan-y;
+}
+
+body {
+    box-sizing: border-box;
+    margin: auto auto;
+    width:100%;
+    background-color: #171717;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    color: #ffffff75;
+}
+
+/* SCROLL BAR */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #171717 #FFF;
+    scroll-behavior: smooth;
+    
+  }
+  
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #171717;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+  border: 3px solid #171717;
+}
+
+/* MAIN */
+
+.rule_main {
+    margin-top: 20px;
+    text-align: left;
+    width: 636px;
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 83.333% */
+    text-transform: uppercase;
+}
+
+.__group {
+    margin-top: 20px;
+    text-align: left;
+    width: 636px;
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 83.333% */
+    text-transform: uppercase;
+}
+
+
+.end {
+    padding-left: 200px;
+    padding-right: 200px;
+    background: #000;
+}

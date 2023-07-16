@@ -1,0 +1,374 @@
+@import "./reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html, body, #root, .app {
+    height: 100%;
+    width: 100%;
+    touch-action: pan-x pan-y;
+}
+
+body {
+    box-sizing: border-box;
+
+    height: 2985px;
+    margin: auto auto;
+    width:100%;
+    background-color: #171717;
+    background-size: cover;
+    background-image: url(./../content/Header_BG.png);   
+    background-repeat: no-repeat;  
+}
+
+
+
+/* SCROLL BAR */
+
+   * {
+    scrollbar-width: thin;
+    scrollbar-color: #171717 #FFF;
+    scroll-behavior: smooth;
+    
+  }
+  
+  *::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #171717;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+    border: 3px solid #171717;
+  }
+
+/* BASE */
+
+.new-container { 
+    align-items: center;
+    margin: 0px auto;
+    max-width: 100%;
+    padding: 0px 360px;
+    height: 100%;
+    width: 1920px;
+    
+}
+
+
+/* HEADER PANEL */
+
+.container-body {
+    margin: 0px auto;
+    width: 1920px;
+    height: 1080px;
+
+    padding: 0px 141px;
+    align-items: center;
+    
+    max-width: 100%;
+}
+
+
+/* HERO TEXT */
+
+.header-title {
+    margin: auto auto;
+    margin-top: 218px;
+    align-items: center;
+    max-width: 100%;
+    
+}
+
+.header-text {
+    text-align: left;
+    display: flex;
+    width: 848px;
+    height: 150px;
+
+    color: #FFF;
+    font-family: 'Jost', sans-serif;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 75px; /* 100% */
+    letter-spacing: -0.75px;
+    text-transform: capitalize;
+}
+
+.header-podtext {
+    text-align: left;
+    display: flex;
+    width: 440.61px;
+    height: 10px;
+    padding-bottom: 10px;
+    margin-left: 3px;
+    color: rgba(255, 255, 255, 0.37);
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+}
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    margin-left: 3px;
+    margin-top: 150px;
+    
+    width: 136px;
+    height: 52px;
+    transition: color 0.2s ease-in;
+    border: 2px solid white;
+}
+
+.button5:hover {
+    color: #C99E71;
+}
+
+/* PLUS */
+
+.community {
+
+}
+
+.text {
+    padding-left: 56px;
+}
+
+.__octobase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.community__header-text {
+    text-align: left;
+    width: 636px;
+    margin-top: 118px;
+    padding-bottom: 30px;
+
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 83.333% */
+    text-transform: uppercase;
+
+}
+
+.community__base {
+    display:inline-block;
+    width: 510px;
+    height: 635px;
+    background: rgba(44,44,44,0.9);
+}
+
+.plus__base {
+    width: 600px;
+    display: flex;
+    height: 181.429px;
+    border-radius: 10px;
+    background: #1D1D1D;
+    
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.plus__text {
+    padding-top: 34px;
+    margin-left: 63px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.plus__name {
+    height: 34px;
+
+    color: #FFF;
+    /* H6-20px */
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+    text-transform: uppercase;
+    
+}
+
+.plus__desc {
+    width: 510px;
+    height: 635px;
+
+    color: #FFF;
+    /* H7-16px (Paragraph Text) */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    
+}
+
+.plus__derma .plus__base + .plus__base {
+    margin-top: 45px;
+}
+
+.carousel__base {
+    width: 510px;
+    height: 635px;
+    display: flex;
+}
+
+.__base {
+    margin-top: 200px;
+
+}
+
+#carouselExampleIndicators {
+    width: 510px;
+    height: 635px;
+    border-radius: 10px;
+    background: #2C2C2C;
+    
+}
+
+.carousel__header {
+    text-align: left;
+    width: 636px;
+    margin-top: 118px;
+    padding-bottom: 30px;
+
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 83.333% */
+    text-transform: uppercase;
+}
+
+.carousel-item  {
+    
+}
+
+/* COMMUNITY */
+
+#button1 {
+    position: relative;
+    left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%, 0);
+}
+
+.__basephone {
+    width: 510px;
+    height: 635px;
+    background: #1D1D1D;
+
+}
+
+.__font {
+    padding-top: 34px;
+    margin-left: 34px;
+}
+
+.base__our {
+    color: #C99E71;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.__title {
+    width: 380px;
+    height: 112px;
+    color: #FFF;
+    font-family: 'Jost', sans-serif;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 55.9px */
+}
+
+.__desc {
+    width: 440.61px;
+    height: 29px;
+
+    color: rgba(255, 255, 255, 0.37);
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+}
+
+.end {
+    padding-left: 200px;
+    padding-right: 200px;
+    background: #000;
+}
+
+.community__images {
+
+}
+
+.octo__phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* CARD */
+.card__base {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar__bg {
+    background: #312d2d;
+    width: 250px;
+	height: 130px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	width: 250px;
+	height: 330px;
+	background: #1D1D1D;
+    color: #FFF;
+	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    font-family: 'Jost', sans-serif;
+}
+
+.avatar {
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+    border-radius: 50%;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+
+.mainInf, .contact {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+}
+
