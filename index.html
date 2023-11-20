@@ -7,30 +7,44 @@
 </head>
 <body> 
     <div class="mouse-parallax">
-        <div class="mouse-parallax-bg"></div>
+        <div class="mouse-parallax-bg">
+        </div>
+        <div class="logo"></div>
     </div>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        .mouse-parallax {
-            height: 100vh;
-            width: 100vw;
             position: fixed;
             overflow: hidden;
         }
+
+        .mouse-parallax {
+            height: 110vh;
+            width: 110vw;
+        }
         .mouse-parallax-bg {
             position: absolute;
+            background-color: #06131A;
             background-image: url("image.png");
             background-size: cover;
-            background-position: center center;
             background-repeat: no-repeat;
-            width: 110vw;
             height: 110vh;
+            width: 110vw;
             transition: all 0.1s ease;  
+        }
+
+        .logo {
+            background-image: url("logo.svg");
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            
+            height: 32px;
+            width: 202px;
+            margin: 30px;
         }
     </style>
     <script>
